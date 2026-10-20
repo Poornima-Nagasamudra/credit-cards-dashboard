@@ -1,0 +1,54 @@
+# BankDash Credit Cards Dashboard
+
+A responsive Credit Cards dashboard UI built using HTML5, custom CSS, and vanilla JavaScript, inspired by the BankDash dashboard design in Figma.
+
+## Features
+
+- Responsive layout for desktop, tablet, and mobile
+- Sidebar navigation and dashboard header
+- Credit card previews with different styles
+- Card expense statistics with a CSS donut chart
+- Card list with a View Details modal
+- Add New Card form with input validation
+- Card settings interaction messages
+- Search and filter functionality
+- Reusable CSS classes and CSS variables
+- Lucide icons
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Lucide Icons
+
+## Project Structure
+
+```text
+credit-cards-dashboard/
+├── index.html
+├── styles.css
+├── script.js
+├── README.md
+└── assets/
+```
+
+## How to Run
+
+1. Download or clone this repository.
+2. Open `index.html` in your browser.
+3. For development, you can use the Live Server extension in VS Code.
+
+An internet connection is required to load the Google Fonts and Lucide icons from their CDNs.
+
+## Functionality
+
+- Search filters the credit card previews and card list.
+- Add Card validates the input and adds a card to the page.
+- View Details displays card information in a modal.
+- Card settings show feedback when selected.
+- Mobile navigation can be toggled on smaller screens.
+
+## Note
+
+This is a frontend demonstration project using sample data. It is not connected to a real banking service and does not store or process real payment information.
