@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Credit Cards | BankDash</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="dashboard">
+            <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+                <a class="brand" href="#" aria-label="BankDash home">
+                    <span class="brand-mark" aria-hidden="true">▣</span><span>BankDash.</span>
+                </a>
+                <nav class="navigation">
+                    <a class="nav-link" href="#"><span class="nav-icon" aria-hidden="true">⌂</span>Dashboard</a>
+                    <a class="nav-link" href="#"><span class="nav-icon" aria-hidden="true">▤</span>Transactions</a>
+                    <a class="nav-link" href="#"><span class="nav-icon" aria-hidden="true">♟</span>Accounts</a>
+                    <a class="nav-link" href="#"><span class="nav-icon" aria-hidden="true">▥</span>Investments</a>
+                    <a class="nav-link active" href="#" aria-current="page"><span class="nav-icon" aria-hidden="true">▣</span>Credit
+                        Cards</a>
+                    <a class="nav-link" href="#"><span class="nav-icon" aria-hidden="true">▧</span>Loans</a>
+                    <a class="nav-link" href="#"><span class="nav-icon" aria-hidden="true">⚒</span>Services</a>
+                    <a class="nav-link" href="#"><span class="nav-icon" aria-hidden="true">♧</span>My Privileges</a>
+                    <a class="nav-link" href="#"><span class="nav-icon" aria-hidden="true">⚙</span>Setting</a>
+                </nav>
+                <div class="sidebar-footer">© 2026 BankDash</div>
+            </aside>
+
+            <div class="dashboard-main">
+                <header class="topbar">
+                    <button class="icon-button menu-toggle" id="menuToggle" aria-label="Toggle navigation"
+                        aria-expanded="false">☰</button>
+                    <h1 class="page-title">Credit Cards</h1>
+                    <div class="topbar-actions">
+                        <label class="search-box">
+                            <span aria-hidden="true">⌕</span>
+                            <input id="globalSearch" type="search" placeholder="Search for something..." aria-label="Search cards">
+                        </label>
+                        <button class="icon-button" type="button" aria-label="Settings">⚙</button>
+                        <button class="icon-button notification-button" type="button" aria-label="Notifications">♧<span
+                                class="notification-dot"></span></button>
+                        <button class="profile-button" type="button" aria-label="Profile menu"><span
+                                class="avatar">P</span></button>
+                    </div>
+                </header>
+            
+                <main class="page-content">
+                    <section class="section" aria-labelledby="myCardsTitle">
+                        <div class="section-heading">
+                            <h2 id="myCardsTitle">My Cards</h2>
+                            <button class="text-button" id="showAllCards" type="button">View all</button>
+                        </div>
+                        <div class="card-grid" id="creditCardGrid">
+                            <article class="credit-card card-blue" data-search="eddy cusuma 3778 1234 blue">
+                                <div class="credit-card-top">
+                                    <div><span class="card-label">Balance</span><strong class="card-balance">$5,756</strong></div>
+                                    <span class="chip" aria-hidden="true">▦</span>
+                                </div>
+                                <div class="card-meta">
+                                    <div><span class="card-label">CARD HOLDER</span><strong>Eddy Cusuma</strong></div>
+                                    <div><span class="card-label">VALID THRU</span><strong>12/22</strong></div>
+                                </div>
+                                <div class="card-number-row"><span>3778&nbsp; ****&nbsp; ****&nbsp; 1234</span><span
+                                        class="mastercard" aria-label="Card network"><i></i><b></b></span></div>
+                            </article>
+                            <article class="credit-card card-purple" data-search="eddy cusuma 3778 1234 purple">
+                                <div class="credit-card-top">
+                                    <div><span class="card-label">Balance</span><strong class="card-balance">$5,756</strong></div>
+                                    <span class="chip" aria-hidden="true">▦</span>
+                                </div>
+                                <div class="card-meta">
+                                    <div><span class="card-label">CARD HOLDER</span><strong>Eddy Cusuma</strong></div>
+                                    <div><span class="card-label">VALID THRU</span><strong>12/22</strong></div>
+                                </div>
+                                <div class="card-number-row"><span>3778&nbsp; ****&nbsp; ****&nbsp; 1234</span><span
+                                        class="mastercard" aria-label="Card network"><i></i><b></b></span></div>
+                            </article>
+                            <article class="credit-card card-white" data-search="eddy cusuma 3778 1234 white">
+                                <div class="credit-card-top">
+                                    <div><span class="card-label">Balance</span><strong class="card-balance">$5,756</strong></div>
+                                    <span class="chip" aria-hidden="true">▦</span>
+                                </div>
+                                <div class="card-meta">
+                                    <div><span class="card-label">CARD HOLDER</span><strong>Eddy Cusuma</strong></div>
+                                    <div><span class="card-label">VALID THRU</span><strong>12/22</strong></div>
+                                </div>
+                                <div class="card-number-row"><span>3778&nbsp; ****&nbsp; ****&nbsp; 1234</span><span
+                                        class="mastercard" aria-label="Card network"><i></i><b></b></span></div>
+                            </article>
+                        </div>
+                        <p class="empty-state" id="cardsEmpty" hidden>No cards match your search.</p>
+                    </section>
+            
+                    <div class="content-grid middle-grid">
+                        <section class="section" aria-labelledby="expenseTitle">
+                            <h2 id="expenseTitle">Card Expense Statistics</h2>
+                            <div class="panel expense-panel">
+                                <div class="donut-chart" role="img"
+                                    aria-label="Expense breakdown: DBL Bank 35%, BRC Bank 20%, ABM Bank 25%, MCP Bank 20%">
+                                    <div class="donut-hole"></div>
+                                </div>
+                                <div class="chart-legend">
+                                    <span><i class="legend-dot dot-blue"></i>DBL Bank</span>
+                                    <span><i class="legend-dot dot-pink"></i>BRC Bank</span>
+                                    <span><i class="legend-dot dot-teal"></i>ABM Bank</span>
+                                    <span><i class="legend-dot dot-orange"></i>MCP Bank</span>
+                                </div>
+                            </div>
+                        </section>
+            
+                        <section class="section" aria-labelledby="cardListTitle">
+                            <h2 id="cardListTitle">Card List</h2>
+                            <div class="card-list" id="cardList">
+                                <article class="bank-card-row" data-search="secondary dbl bank 5600 william">
+                                    <span class="bank-icon bank-blue" aria-hidden="true">▣</span>
+                                    <div class="bank-field"><span>Card Type</span><strong>Secondary</strong></div>
+                                    <div class="bank-field"><span>Bank</span><strong>DBL Bank</strong></div>
+                                    <div class="bank-field"><span>Card Number</span><strong>**** **** 5600</strong></div>
+                                    <div class="bank-field"><span>Namain Card</span><strong>William</strong></div>
+                                    <button class="details-button" type="button"
+                                        data-card="DBL Bank|Secondary|**** **** 5600|William">View Details</button>
+                                </article>
+                                <article class="bank-card-row" data-search="secondary brc bank 4300 michel">
+                                    <span class="bank-icon bank-pink" aria-hidden="true">▣</span>
+                                    <div class="bank-field"><span>Card Type</span><strong>Secondary</strong></div>
+                                    <div class="bank-field"><span>Bank</span><strong>BRC Bank</strong></div>
+                                    <div class="bank-field"><span>Card Number</span><strong>**** **** 4300</strong></div>
+                                    <div class="bank-field"><span>Namain Card</span><strong>Michel</strong></div>
+                                    <button class="details-button" type="button"
+                                        data-card="BRC Bank|Secondary|**** **** 4300|Michel">View Details</button>
+                                </article>
+                                <article class="bank-card-row" data-search="secondary abm bank 7560 edward">
+                                    <span class="bank-icon bank-orange" aria-hidden="true">▣</span>
+                                    <div class="bank-field"><span>Card Type</span><strong>Secondary</strong></div>
+                                    <div class="bank-field"><span>Bank</span><strong>ABM Bank</strong></div>
+                                    <div class="bank-field"><span>Card Number</span><strong>**** **** 7560</strong></div>
+                                    <div class="bank-field"><span>Namain Card</span><strong>Edward</strong></div>
+                                    <button class="details-button" type="button"
+                                        data-card="ABM Bank|Secondary|**** **** 7560|Edward">View Details</button>
+                                </article>
+                            </div>
+                            <p class="empty-state" id="listEmpty" hidden>No cards match your search.</p>
+                        </section>
+                    </div>
+            
+                    <div class="content-grid bottom-grid">
+                        <section class="section" aria-labelledby="addCardTitle">
+                            <h2 id="addCardTitle">Add New Card</h2>
+                            <div class="panel add-card-panel">
+                                <p class="helper-copy">Credit Card generally means a plastic card issued by scheduled commercial
+                                    banks assigned to a cardholder, with a credit limit, that can be used to purchase goods and
+                                    services on credit or obtain cash advances.</p>
+                                <form id="addCardForm" novalidate>
+                                    <div class="form-grid">
+                                        <div class="form-field">
+                                            <label for="cardType">Card Type</label>
+                                            <select id="cardType" name="cardType" required>
+                                                <option value="Classic">Classic</option>
+                                                <option value="Gold">Gold</option>
+                                                <option value="Platinum">Platinum</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-field">
+                                            <label for="cardName">Name On Card</label>
+                                            <input id="cardName" name="cardName" type="text" placeholder="My Cards" maxlength="40"
+                                                required>
+                                        </div>
+                                        <div class="form-field">
+                                            <label for="cardNumber">Card Number</label>
+                                            <input id="cardNumber" name="cardNumber" type="text" inputmode="numeric"
+                                                autocomplete="cc-number" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                                        </div>
+                                        <div class="form-field">
+                                            <label for="expiryDate">Expiration Date</label>
+                                            <input id="expiryDate" name="expiryDate" type="month" required>
+                                        </div>
+                                    </div>
+                                    <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+                                    <button class="primary-button" type="submit">Add Card</button>
+                                </form>
+                            </div>
+                        </section>
+            
+                        <section class="section" aria-labelledby="settingsTitle">
+                            <h2 id="settingsTitle">Card Setting</h2>
+                            <div class="panel settings-panel">
+                                <button class="setting-item" type="button" data-setting="Block Card"
+                                    data-description="Your card is now marked as blocked in this demo.">
+                                    <span class="setting-icon setting-orange" aria-hidden="true">▣</span><span><strong>Block
+                                            Card</strong><small>Instantly block your card</small></span>
+                                </button>
+                                <button class="setting-item" type="button" data-setting="Change Pin Code"
+                                    data-description="PIN change flow would open here.">
+                                    <span class="setting-icon setting-blue" aria-hidden="true">♙</span><span><strong>Change Pin
+                                            Code</strong><small>Choose another pin code</small></span>
+                                </button>
+                                <button class="setting-item" type="button" data-setting="Add to Google Pay"
+                                    data-description="Google Pay connection is simulated in this demo.">
+                                    <span class="setting-icon setting-pink" aria-hidden="true">G</span><span><strong>Add to Google
+                                            Pay</strong><small>Withdraw without any card</small></span>
+                                </button>
+                                <button class="setting-item" type="button" data-setting="Add to Apple Pay"
+                                    data-description="Apple Pay connection is simulated in this demo.">
+                                    <span class="setting-icon setting-teal" aria-hidden="true">♧</span><span><strong>Add to Apple
+                                            Pay</strong><small>Withdraw without any card</small></span>
+                                </button>
+                                <button class="setting-item" type="button" data-setting="Add to Apple Store"
+                                    data-description="Apple Store connection is simulated in this demo.">
+                                    <span class="setting-icon setting-teal" aria-hidden="true">♧</span><span><strong>Add to Apple
+                                            Store</strong><small>Use your card for purchases</small></span>
+                                </button>
+                                <p class="settings-message" id="settingsMessage" role="status" aria-live="polite"></p>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+            </div>
+            </div>
+            
+            <div class="modal-backdrop" id="detailsModal" hidden>
+                <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+                    <button class="modal-close" id="closeModal" type="button" aria-label="Close dialog">×</button>
+                    <h2 id="modalTitle">Card Details</h2>
+                    <dl class="details-list" id="detailsContent"></dl>
+                    <button class="primary-button" id="doneModal" type="button">Done</button>
+                </section>
+            </div>
+            <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+        </div>
+
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
